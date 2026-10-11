@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&amp;family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-lowest": "#ffffff", "surface-bright": "#faf6f0", "primary-fixed-dim": "#8ecf9e", "on-primary": "#ffffff", "on-error": "#ffffff", "surface-container-highest": "#e4e0d8", "on-secondary-fixed-variant": "#4a4538", "on-error-container": "#690005", "on-primary-fixed": "#002110", "on-tertiary-fixed": "#221a05", "surface-container": "#f0ece4", "on-surface": "#2e3230", "tertiary": "#705c30", "error": "#b83230", "on-primary-container": "#d8f0de", "on-tertiary-fixed-variant": "#554020", "tertiary-fixed": "#f8e0a8", "inverse-on-surface": "#f5f0e8", "surface-dim": "#dbd7cf", "on-secondary": "#ffffff", "secondary": "#6b6358", "surface-container-high": "#eae6de", "tertiary-container": "#c4a66a", "primary-container": "#78a886", "on-tertiary-container": "#554020", "surface-tint": "#4a7c59", "outline": "#74796e", "inverse-primary": "#8ecf9e", "secondary-fixed-dim": "#d4ccbf", "surface-container-low": "#f5f1ea", "on-background": "#2e3230", "error-container": "#ffdad8", "surface": "#faf6f0", "on-tertiary": "#ffffff", "on-secondary-container": "#5e5548", "secondary-fixed": "#f0e8db", "primary": "#4a7c59", "inverse-surface": "#2e3230", "secondary-container": "#f0e8db", "tertiary-fixed-dim": "#dcc48e", "background": "#faf6f0", "on-secondary-fixed": "#1e1a13", "on-surface-variant": "#4a4e4a", "surface-variant": "#e4e0d8", "on-primary-fixed-variant": "#2a6038", "outline-variant": "#c4c8bc", "primary-fixed": "#c8e8d0" }, borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" }, spacing: {}, fontFamily: { "headline": ["Literata"], "display": ["Literata"], "body": ["Nunito Sans"], "label": ["Nunito Sans"] }, fontSize: {} } } }</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(46,50,48,0.04)]"><div class="h-16 px-4 flex items-center justify-between gap-3"><div class="flex items-center gap-2.5 min-w-0"><img alt="AgroFinanzas Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1V8uLO3f36LFMmb9pgm4_X44AJ6fLzz38APnPVDqhLG-e491ap8-dnjZxFB18GdfS1FuU7AwAYYPtABts6KrNkl6Fsswn6Vqrbjx4MBoWutfg20yKt0lt32yfF_ijvVy810g41vO8sNTfYHKAI0oVz-5X7nCxLHms8VeXTQlT8pj59k3b5N5WdFFCiCJPOpHgEAzSn85WYKbS0PGa1GSeoV5_W06QxAykd1EvkB2faD_Ejo_HzXCf7MfaF_"/><div class="flex flex-col min-w-0"><span class="font-headline font-semibold text-base text-on-surface tracking-tight leading-tight truncate">AgroFinanzas</span><span class="text-[11px] font-label text-on-surface-variant leading-none truncate">Inicio</span></div></div><div class="flex items-center gap-2 flex-shrink-0"><button class="min-h-[44px] px-2.5 py-1.5 rounded-lg bg-surface-container flex items-center gap-1 text-xs font-label text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-primary">calendar_today</span><span>Mes Actual</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full px-4 py-5 gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="relative w-12 h-12 rounded-full overflow-hidden shadow-sm flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Cálido y sonriente agricultor peruano maduro con sombrero de paja y camisa rústica clara de lino, posando en un campo verde iluminado con luz natural matutina dorada, estilo fotográfico editorial y orgánico." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7TNIcIajDakWMeL3vwfYoe9yJndalbNn8dxjsVOSEf8Hp0dsa31MaxJR_FZkCzsxzN9tqlCEPqFOuIGjXNYgbPmRtChEQ6CV6w3Uer7q3HluabJhKSey6Do-XVG7VnbCKW0fWVW1sZ_wRCsc4X5z4gjNjiD6afwv_FGmK8Krikjvc59AbaZeffiY37uFjFCvLeOi0gp4xleBuT0gFljApq_9ULtFM25aR_91rUoNY2cWK9J2jNeaWXQ"/>
+<div class="absolute bottom-0 right-0 w-3 h-3 bg-primary rounded-full"></div>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="text-xs font-label uppercase tracking-wider text-on-surface-variant font-semibold">Fundo San Isidro</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+<h1 class="font-headline font-bold text-xl text-on-surface leading-tight">¡Buen día, Don Manuel!</h1>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-3 py-1.5 rounded-full shadow-sm text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+<span class="text-xs font-label font-bold text-on-surface">22°C</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-5 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between mb-2">
+<span class="text-xs font-label uppercase tracking-wide text-on-surface-variant font-medium">Balance Neto Disponible</span>
+<span class="inline-flex items-center gap-1 bg-primary-fixed text-on-primary-fixed font-label text-xs font-bold px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+        +14.2%
+      </span>
+</div>
+<div class="flex items-baseline gap-1.5 mb-5">
+<span class="text-lg font-headline text-on-surface-variant font-semibold">S/.</span>
+<span class="text-3xl font-headline font-bold text-on-surface tracking-tight">4,850.00</span>
+</div>
+<div class="grid grid-cols-2 gap-3 pt-3 bg-surface-container rounded-lg p-3">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-[11px] font-label text-on-surface-variant uppercase tracking-wider">Ingresos del Mes</span>
+</div>
+<span class="text-base font-bold font-headline text-primary">S/. 7,240.00</span>
+</div>
+<div class="flex flex-col pl-3">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="text-[11px] font-label text-on-surface-variant uppercase tracking-wider">Gastos Incurridos</span>
+</div>
+<span class="text-base font-bold font-headline text-tertiary">S/. 2,390.00</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5 overflow-x-auto pb-1 -mx-4 px-4 scrollbar-none">
+<button class="flex-1 min-w-[130px] flex items-center justify-center gap-2 bg-primary text-on-primary px-3.5 py-3 rounded-lg font-label font-bold text-xs shadow-sm hover:opacity-95 active:scale-[0.98] transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Registrar Venta</span>
+</button>
+<button class="flex-1 min-w-[125px] flex items-center justify-center gap-2 bg-surface-container text-on-surface px-3.5 py-3 rounded-lg font-label font-bold text-xs shadow-sm hover:bg-surface-container-high active:scale-[0.98] transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">receipt</span>
+<span>Nuevo Gasto</span>
+</button>
+<button class="flex items-center justify-center gap-1.5 bg-surface-container text-on-surface-variant px-3 py-3 rounded-lg font-label font-bold text-xs shadow-sm hover:text-on-surface active:scale-[0.98] transition-colors flex-shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">bar_chart</span>
+<span>Reporte</span>
+</button>
+</div>
+<div class="bg-surface-container-low rounded-xl p-4 shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline font-bold text-sm text-on-surface truncate">2 productos con bajo stock</h3>
+<span class="w-2 h-2 rounded-full bg-error flex-shrink-0 animate-pulse"></span>
+</div>
+<p class="text-xs font-body text-on-surface-variant truncate">Huevos de corral: solo 4 jabas restantes en almacén</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-5 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline font-bold text-sm text-on-surface">Flujo de Ventas Semanal</h2>
+<span class="text-[11px] font-label text-on-surface-variant">Promedio: S/. 410 / día</span>
+</div>
+<span class="text-xs font-label font-bold text-primary bg-primary-fixed px-2.5 py-1 rounded-full">S/. 2,870 Total</span>
+</div>
+<div class="w-full pt-4">
+<div class="flex items-end justify-between gap-2 h-28 px-1">
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end">
+<span class="text-[10px] font-label font-bold text-on-surface-variant">S/.260</span>
+<div class="w-full bg-primary-container/40 rounded-t-md hover:bg-primary transition-colors" style="height: 38%;"></div>
+<span class="text-[11px] font-label text-on-surface-variant font-medium">Lun</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end">
+<span class="text-[10px] font-label font-bold text-on-surface-variant">S/.340</span>
+<div class="w-full bg-primary-container/40 rounded-t-md hover:bg-primary transition-colors" style="height: 48%;"></div>
+<span class="text-[11px] font-label text-on-surface-variant font-medium">Mar</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end">
+<span class="text-[10px] font-label font-bold text-on-surface-variant">S/.190</span>
+<div class="w-full bg-primary-container/40 rounded-t-md hover:bg-primary transition-colors" style="height: 28%;"></div>
+<span class="text-[11px] font-label text-on-surface-variant font-medium">Mié</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end">
+<span class="text-[10px] font-label font-bold text-on-surface-variant">S/.480</span>
+<div class="w-full bg-primary-container/40 rounded-t-md hover:bg-primary transition-colors" style="height: 65%;"></div>
+<span class="text-[11px] font-label text-on-surface-variant font-medium">Jue</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end">
+<span class="text-[10px] font-label font-bold text-on-surface-variant">S/.520</span>
+<div class="w-full bg-primary-container/40 rounded-t-md hover:bg-primary transition-colors" style="height: 72%;"></div>
+<span class="text-[11px] font-label text-on-surface-variant font-medium">Vie</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end">
+<span class="text-[10px] font-label font-bold text-primary">S/.680</span>
+<div class="w-full bg-primary rounded-t-md shadow-sm" style="height: 94%;"></div>
+<span class="text-[11px] font-label text-primary font-bold">Sáb</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end">
+<span class="text-[10px] font-label font-bold text-on-surface-variant">S/.400</span>
+<div class="w-full bg-primary-container/40 rounded-t-md hover:bg-primary transition-colors" style="height: 55%;"></div>
+<span class="text-[11px] font-label text-on-surface-variant font-medium">Dom</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h2 class="font-headline font-bold text-base text-on-surface">Últimos Movimientos</h2>
+<button class="text-xs font-label font-bold text-primary hover:underline" type="button">Ver todas</button>
+</div>
+<div class="flex flex-col gap-2.5">
+<div class="bg-surface-container-low p-3.5 rounded-xl flex items-center justify-between gap-3 shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Paltas Hass frescas y cremosas cortadas sobre tabla rústica de madera artesanal de nogal, gotas de agua matutina, estilo orgánico y natural." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcwJbY8ZWI9EZiD_3wJSmGIG5s-1vshDHOvLayPGw6adqmU2ODNbTC5E3XD6tuO6N6dl4uE4yLcfVfKQ85-HKrLrEwu5H_mLosLYfiZn0bXgNj8VVNctUKqIaw0KNKFiXNy7_OzfNfMFC2GE0L2IomgTdDHho68g3gMZLZywNGO9dq29KO-Gy2-ldTLr0Js_XxlBuBZOGWGJ1S7oTfUhLtLYgJ3MJgynLojs3TD3VEjKkSnP2Xav_YRg"/>
+</div>
+<div class="min-w-0 flex flex-col">
+<span class="font-headline font-bold text-sm text-on-surface truncate">Bodega Don Lucho</span>
+<span class="text-[11px] font-body text-on-surface-variant truncate">10 kg Palta Hass • Hoy 10:30 am</span>
+<span class="text-[10px] font-label text-primary font-semibold flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Cobrado vía Yape
+            </span>
+</div>
+</div>
+<span class="font-headline font-bold text-sm text-primary flex-shrink-0">+ S/. 85.00</span>
+</div>
+<div class="bg-surface-container-low p-3.5 rounded-xl flex items-center justify-between gap-3 shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Masa artesanal y fresca de queso andino de campo en paño rústico tradicional de tela blanca con hierbas naturales del campo, fotografía de producto artesanal andino." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0m_GkCExbnz3GQkTJbx3VznGz1p2uMTMN2L9k3kVSZUYKOos85Ps8Os7_mtUannv5wniuytix8JovzrdTz6D2v2w8iK_GrvifONJ1lL1fnB7DwjzGu8enxrZ6u8k-es82sNrdDpSB3NlY3iPivILhHnPtHeefsRJe6WpANGZypU9S6Bn7Im-a5Bre9lmgp6nL89-qp993xpM2fvZbanwVWLnIDAGT7P-6IxOeGExG4lZK8JpNnXVZTg"/>
+</div>
+<div class="min-w-0 flex flex-col">
+<span class="font-headline font-bold text-sm text-on-surface truncate">Restaurante El Huerto</span>
+<span class="text-[11px] font-body text-on-surface-variant truncate">5 Moldes Queso Andino • Ayer</span>
+<span class="text-[10px] font-label text-primary font-semibold flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[12px]">payments</span> En Efectivo
+            </span>
+</div>
+</div>
+<span class="font-headline font-bold text-sm text-primary flex-shrink-0">+ S/. 140.00</span>
+</div>
+<div class="bg-surface-container-low p-3.5 rounded-xl flex items-center justify-between gap-3 shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Huevos frescos de corral seleccionados cuidadosamente en nido de paja natural con luz tibia de atardecer, concepto campestre y fresco." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq37NFuySrcv0jUn0n5phUdBFZQcwhlZfRxHsQ4ngnADOb6kKJk_oH_ClbswZYt39_dck2drnD7iJQPau2tzAlJ6rczhsWnDVqwpksKkuc3aFaL_0-PRrvp6vCBbVMHXQ6iXRsz1wgnevQjpPBfHjNQq7pmZdBiwH8MKsgvaLFbnzL45Sektk55QI8OQv90aeqtjThtjOW9tZ1DjgjBWg-vjaOmbJBv5q93ozAZm5mHZZ7IAqgEAy37A"/>
+</div>
+<div class="min-w-0 flex flex-col">
+<span class="font-headline font-bold text-sm text-on-surface truncate">Sra. Carmen</span>
+<span class="text-[11px] font-body text-on-surface-variant truncate">2 Jabas Huevos corral • Ayer</span>
+<span class="text-[10px] font-label text-tertiary font-semibold flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[12px]">schedule</span> Por cobrar (Pendiente)
+            </span>
+</div>
+</div>
+<span class="font-headline font-bold text-sm text-tertiary flex-shrink-0">S/. 110.00</span>
+</div>
+<div class="bg-surface-container-low p-3.5 rounded-xl flex items-center justify-between gap-3 shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-secondary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+<div class="min-w-0 flex flex-col">
+<span class="font-headline font-bold text-sm text-on-surface truncate">Flete y Transporte</span>
+<span class="text-[11px] font-body text-on-surface-variant truncate">Mercado Central • 14 Mar</span>
+<span class="text-[10px] font-label text-on-surface-variant font-medium flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[12px]">receipt_long</span> Gasto Operativo
+            </span>
+</div>
+</div>
+<span class="font-headline font-bold text-sm text-on-surface-variant flex-shrink-0">- S/. 45.00</span>
+</div>
+</div>
+</div>
+<div class="bg-secondary-container/60 rounded-xl p-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0 text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+</div>
+<p class="text-xs font-body text-on-secondary-container leading-relaxed">
+<span class="font-bold">Consejo de Don Manuel:</span> Los sábados tu venta de Palta se incrementa un 35%. Asegura abastecimiento para el fin de semana.
+    </p>
+</div>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(46,50,48,0.05)]" data-active-classes="text-primary font-bold"><div class="h-16 px-2 flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 transition-colors text-primary font-bold" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="text-[10px] font-label font-medium tracking-tight">Inicio</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="ventas" href="#"><span class="material-symbols-outlined text-[22px]">point_of_sale</span><span class="text-[10px] font-label font-medium tracking-tight">Ventas</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="productos" href="#"><span class="material-symbols-outlined text-[22px]">potted_plant</span><span class="text-[10px] font-label font-medium tracking-tight">Productos</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="gastos" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="text-[10px] font-label font-medium tracking-tight">Gastos</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="clientes" href="#"><span class="material-symbols-outlined text-[22px]">groups</span><span class="text-[10px] font-label font-medium tracking-tight">Clientes</span></a></div></nav></body></html>

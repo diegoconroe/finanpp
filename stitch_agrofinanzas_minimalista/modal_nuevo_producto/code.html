@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&amp;family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-lowest": "#ffffff", "surface-bright": "#faf6f0", "primary-fixed-dim": "#8ecf9e", "on-primary": "#ffffff", "on-error": "#ffffff", "surface-container-highest": "#e4e0d8", "on-secondary-fixed-variant": "#4a4538", "on-error-container": "#690005", "on-primary-fixed": "#002110", "on-tertiary-fixed": "#221a05", "surface-container": "#f0ece4", "on-surface": "#2e3230", "tertiary": "#705c30", "error": "#b83230", "on-primary-container": "#d8f0de", "on-tertiary-fixed-variant": "#554020", "tertiary-fixed": "#f8e0a8", "inverse-on-surface": "#f5f0e8", "surface-dim": "#dbd7cf", "on-secondary": "#ffffff", "secondary": "#6b6358", "surface-container-high": "#eae6de", "tertiary-container": "#c4a66a", "primary-container": "#78a886", "on-tertiary-container": "#554020", "surface-tint": "#4a7c59", "outline": "#74796e", "inverse-primary": "#8ecf9e", "secondary-fixed-dim": "#d4ccbf", "surface-container-low": "#f5f1ea", "on-background": "#2e3230", "error-container": "#ffdad8", "surface": "#faf6f0", "on-tertiary": "#ffffff", "on-secondary-container": "#5e5548", "secondary-fixed": "#f0e8db", "primary": "#4a7c59", "inverse-surface": "#2e3230", "secondary-container": "#f0e8db", "tertiary-fixed-dim": "#dcc48e", "background": "#faf6f0", "on-secondary-fixed": "#1e1a13", "on-surface-variant": "#4a4e4a", "surface-variant": "#e4e0d8", "on-primary-fixed-variant": "#2a6038", "outline-variant": "#c4c8bc", "primary-fixed": "#c8e8d0" }, borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" }, spacing: {}, fontFamily: { "headline": ["Literata"], "display": ["Literata"], "body": ["Nunito Sans"], "label": ["Nunito Sans"] }, fontSize: {} } } }</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(46,50,48,0.04)]"><div class="h-16 px-4 flex items-center justify-between gap-3"><div class="flex items-center gap-2.5 min-w-0"><img alt="AgroFinanzas Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1V8uLO3f36LFMmb9pgm4_X44AJ6fLzz38APnPVDqhLG-e491ap8-dnjZxFB18GdfS1FuU7AwAYYPtABts6KrNkl6Fsswn6Vqrbjx4MBoWutfg20yKt0lt32yfF_ijvVy810g41vO8sNTfYHKAI0oVz-5X7nCxLHms8VeXTQlT8pj59k3b5N5WdFFCiCJPOpHgEAzSn85WYKbS0PGa1GSeoV5_W06QxAykd1EvkB2faD_Ejo_HzXCf7MfaF_"/><div class="flex flex-col min-w-0"><span class="font-headline font-semibold text-base text-on-surface tracking-tight leading-tight truncate">AgroFinanzas</span><span class="text-[11px] font-label text-on-surface-variant leading-none truncate">Productos</span></div></div><div class="flex items-center gap-2 flex-shrink-0"><button class="min-h-[44px] px-2.5 py-1.5 rounded-lg bg-surface-container flex items-center gap-1 text-xs font-label text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-primary">calendar_today</span><span>Mes Actual</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full px-4 py-4 space-y-6">
+<!-- Modal Header & Friendly Subtitle -->
+<div class="flex items-start justify-between gap-3 pt-1">
+<div class="space-y-1">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-semibold">
+<span class="material-symbols-outlined text-[14px] text-primary">eco</span>
+        Inventario Productivo
+      </div>
+<h1 class="font-headline text-2xl font-semibold text-on-surface tracking-tight">
+        Nuevo Producto en Catálogo
+      </h1>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+        Añade cosechas, derivados o insumos a tu inventario con seguimiento de costos y margen.
+      </p>
+</div>
+<button aria-label="Cerrar formulario" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-variant hover:text-on-surface transition-all flex-shrink-0 active:scale-95 shadow-sm" type="button">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- Form Wrapper -->
+<form class="space-y-6" id="productForm" onsubmit="event.preventDefault();">
+<!-- 1. Foto / Ilustración Representativa -->
+<div class="bg-surface-container-low rounded-xl p-4 shadow-sm space-y-3">
+<div class="flex items-center justify-between">
+<label class="font-headline text-sm font-semibold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">photo_camera</span>
+          Foto o Ilustración
+        </label>
+<span class="text-xs font-label text-on-surface-variant">Opcional pero recomendado</span>
+</div>
+<!-- Quick Icon Badges for Agricultural Categories -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 -mx-1 px-1">
+<button class="group flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-xs font-label text-on-surface transition-all active:scale-95 flex-shrink-0 shadow-sm" onclick="selectCropIcon('Palta')" type="button">
+<span class="text-base">🥑</span>
+<span>Paltas</span>
+</button>
+<button class="group flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-xs font-label text-on-surface transition-all active:scale-95 flex-shrink-0 shadow-sm" onclick="selectCropIcon('Queso')" type="button">
+<span class="text-base">🧀</span>
+<span>Lácteos</span>
+</button>
+<button class="group flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-xs font-label text-on-surface transition-all active:scale-95 flex-shrink-0 shadow-sm" onclick="selectCropIcon('Huevos')" type="button">
+<span class="text-base">🥚</span>
+<span>Huevos</span>
+</button>
+<button class="group flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-xs font-label text-on-surface transition-all active:scale-95 flex-shrink-0 shadow-sm" onclick="selectCropIcon('Hortalizas')" type="button">
+<span class="text-base">🥬</span>
+<span>Hortalizas</span>
+</button>
+<button class="group flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-xs font-label text-on-surface transition-all active:scale-95 flex-shrink-0 shadow-sm" onclick="selectCropIcon('Frutas')" type="button">
+<span class="text-base">🍊</span>
+<span>Frutas</span>
+</button>
+</div>
+<!-- Upload Zone Preview with warm texture style -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container flex flex-col items-center justify-center p-5 text-center transition-colors">
+<img alt="Fondo textura agrícola" class="absolute inset-0 w-full h-full object-cover opacity-20" data-alt="A warm organic still life photography of fresh Peruvian Hass avocados and rustic farm harvest wooden boxes on a warm sunlit stone table, soft earthy shadows and natural warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjec1P42CFnicMTBEPr06pP2KQGw5mHaQJ2BgMO5Un9NssMU7HQ6eRusk_nG0CqhVbkAB78yrCd1FLShbNFxtqt2B3AZ0uEFQX8izqd1NK5iQ3dGB5l3Ds8fR5OkvMOP0VzlpaeUKpXDD-bHgo3vEqxVEXpyVJWGadGxq8UBuny7-mrsNXIPFnU3cVNJaPR71iFEffae4Zl73OqU_uaWA6plPVw696my-QrVumL1Z2MX1mvVeNdNvz6w"/>
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shadow-sm">
+<span class="material-symbols-outlined text-2xl" id="previewIcon">add_a_photo</span>
+</div>
+<div>
+<p class="font-headline text-sm font-semibold text-on-surface">Subir foto real de tu lote</p>
+<p class="text-xs text-on-surface-variant font-label">Toca para abrir cámara o galería (PNG, JPG)</p>
+</div>
+<button class="mt-1 px-4 py-1.5 rounded-lg bg-surface text-primary text-xs font-label font-bold hover:bg-surface-variant transition-colors shadow-sm" type="button">
+            Explorar archivos
+          </button>
+</div>
+</div>
+</div>
+<!-- 2. Nombre del Producto -->
+<div class="space-y-1.5">
+<label class="font-headline text-sm font-semibold text-on-surface flex items-center gap-1.5" for="prodName">
+<span>Nombre del Producto</span>
+<span class="text-error text-xs">*</span>
+</label>
+<div class="relative">
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container text-on-surface placeholder:text-on-surface-variant/60 focus:bg-surface-container-lowest focus:outline-none focus:shadow-md transition-all text-sm font-body" id="prodName" placeholder="ej. Palta Fuerte Extra, Miel de Abeja 500g" required="" type="text" value="Palta Fuerte Extra de Exportación"/>
+</div>
+<p class="text-[11px] font-label text-on-surface-variant px-1">Usa un nombre reconocible para tus recibos y despachos en campo.</p>
+</div>
+<!-- 3. Categoría y Unidad de Medida -->
+<div class="bg-surface-container-low rounded-xl p-4 shadow-sm space-y-4">
+<!-- Selector de Categoría -->
+<div class="space-y-2">
+<label class="font-headline text-sm font-semibold text-on-surface flex items-center gap-1.5" for="prodCategory">
+<span class="material-symbols-outlined text-tertiary text-[18px]">category</span>
+<span>Categoría de Producción</span>
+</label>
+<div class="relative">
+<select class="w-full px-4 py-3 rounded-lg bg-surface-container text-on-surface appearance-none focus:bg-surface-container-lowest focus:outline-none transition-all text-sm font-body pr-10" id="prodCategory">
+<option selected="" value="frutales">🥑 Palta y Frutales</option>
+<option value="lacteos">🧀 Lácteos y Derivados</option>
+<option value="aves">🥚 Aves y Huevos</option>
+<option value="granos">🌾 Granos, Legumbres y Otros</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-lg">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Unidad de Venta (Chips) -->
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<label class="font-headline text-sm font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">scale</span>
+<span>Unidad de Venta</span>
+</label>
+<span class="text-xs font-label font-bold text-primary" id="selectedUnitLabel">Kilogramo (kg)</span>
+</div>
+<div class="grid grid-cols-2 gap-2" id="unitChipGroup">
+<button class="unit-chip active flex items-center justify-between p-2.5 rounded-lg bg-primary text-on-primary transition-all text-xs font-semibold text-left shadow-sm" data-unit="kg" type="button">
+<span>Kilogramo (kg)</span>
+<span class="material-symbols-outlined text-base">check_circle</span>
+</button>
+<button class="unit-chip flex items-center justify-between p-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-all text-xs font-semibold text-left" data-unit="caja" type="button">
+<span>Jaba / Caja</span>
+<span class="material-symbols-outlined text-base opacity-0">check_circle</span>
+</button>
+<button class="unit-chip flex items-center justify-between p-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-all text-xs font-semibold text-left" data-unit="molde" type="button">
+<span>Molde (~1kg)</span>
+<span class="material-symbols-outlined text-base opacity-0">check_circle</span>
+</button>
+<button class="unit-chip flex items-center justify-between p-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-all text-xs font-semibold text-left" data-unit="docena" type="button">
+<span>Docena</span>
+<span class="material-symbols-outlined text-base opacity-0">check_circle</span>
+</button>
+<button class="unit-chip col-span-2 flex items-center justify-between p-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-all text-xs font-semibold text-left" data-unit="unidad" type="button">
+<span>Unidad individual</span>
+<span class="material-symbols-outlined text-base opacity-0">check_circle</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 4. Estructura de Costos y Precios con Calculadora de Margen Dinámica -->
+<div class="bg-surface-container-low rounded-xl p-4 shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<h2 class="font-headline text-sm font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">payments</span>
+            Precios y Márgenes en Soles
+          </h2>
+<p class="text-xs text-on-surface-variant font-body">Cálculo de rentabilidad por unidad cosechada</p>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-secondary-fixed text-on-secondary-fixed">PEN (S/.)</span>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Precio de Venta -->
+<div class="space-y-1.5">
+<label class="text-xs font-headline font-semibold text-on-surface" for="sellPrice">
+            Precio Venta
+          </label>
+<div class="relative flex items-center">
+<span class="absolute left-3 text-xs font-bold text-on-surface-variant">S/.</span>
+<input class="w-full pl-9 pr-3 py-2.5 rounded-lg bg-surface-container text-on-surface font-headline font-semibold text-base focus:bg-surface-container-lowest focus:outline-none transition-all" id="sellPrice" min="0" oninput="calculateMargin()" step="0.10" type="number" value="9.50"/>
+</div>
+<span class="text-[10px] text-on-surface-variant block truncate">Por unidad/kg fijado</span>
+</div>
+<!-- Costo Estimado -->
+<div class="space-y-1.5">
+<label class="text-xs font-headline font-semibold text-on-surface" for="costPrice">
+            Costo Cosecha/Prod.
+          </label>
+<div class="relative flex items-center">
+<span class="absolute left-3 text-xs font-bold text-on-surface-variant">S/.</span>
+<input class="w-full pl-9 pr-3 py-2.5 rounded-lg bg-surface-container text-on-surface font-headline font-semibold text-base focus:bg-surface-container-lowest focus:outline-none transition-all" id="costPrice" min="0" oninput="calculateMargin()" step="0.10" type="number" value="5.20"/>
+</div>
+<span class="text-[10px] text-on-surface-variant block truncate">Insumos, mano de obra</span>
+</div>
+</div>
+<!-- Badge de Margen y Rentabilidad Dinámico -->
+<div class="rounded-xl p-3.5 bg-primary-fixed text-on-primary-fixed flex items-center justify-between gap-3 transition-all duration-300" id="marginCard">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/80 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-xl">trending_up</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-baseline gap-1.5">
+<span class="text-xs font-bold font-label">Margen estimado:</span>
+<span class="font-headline font-bold text-base text-primary" id="marginPercent">45.3%</span>
+</div>
+<p class="text-xs font-body text-on-primary-fixed-variant truncate" id="marginDetail">
+              Ganancia neta: S/. 4.30 por kg
+            </p>
+</div>
+</div>
+<span class="text-xs font-bold px-2 py-1 rounded bg-surface-container-lowest/70 text-on-surface-variant">
+          Saludable
+        </span>
+</div>
+</div>
+<!-- 5. Control de Stock Inicial y Alertas -->
+<div class="bg-surface-container-low rounded-xl p-4 shadow-sm space-y-4">
+<div class="space-y-0.5">
+<h2 class="font-headline text-sm font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">inventory</span>
+          Control de Stock y Alertas de Merma
+        </h2>
+<p class="text-xs text-on-surface-variant font-body">Monitorea tus existencias para no quedarte desabastecido</p>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Stock Actual -->
+<div class="space-y-1.5">
+<label class="text-xs font-headline font-semibold text-on-surface" for="initialStock">
+            Stock Disponible
+          </label>
+<div class="relative flex items-center">
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container text-on-surface font-headline font-semibold text-base focus:bg-surface-container-lowest focus:outline-none transition-all" id="initialStock" min="0" step="1" type="number" value="120"/>
+<span class="absolute right-3 text-xs text-on-surface-variant font-bold pointer-events-none">kg</span>
+</div>
+<span class="text-[10px] text-on-surface-variant block">Almacén o campo hoy</span>
+</div>
+<!-- Alerta Mínima -->
+<div class="space-y-1.5">
+<label class="text-xs font-headline font-semibold text-on-surface" for="minStock">
+            Alerta de Stock Bajo
+          </label>
+<div class="relative flex items-center">
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container text-on-surface font-headline font-semibold text-base focus:bg-surface-container-lowest focus:outline-none transition-all" id="minStock" min="0" step="1" type="number" value="20"/>
+<span class="absolute right-3 text-xs text-on-surface-variant font-bold pointer-events-none">kg</span>
+</div>
+<span class="text-[10px] text-on-surface-variant block">Notificarme vía WhatsApp</span>
+</div>
+</div>
+<!-- Indicador visual de umbral -->
+<div class="p-2.5 rounded-lg bg-surface-container flex items-center gap-2.5 text-xs text-on-surface-variant font-body">
+<span class="material-symbols-outlined text-tertiary text-base flex-shrink-0">notifications_active</span>
+<span>Recibirás un aviso en el resumen diario cuando tu stock descienda a 20 kg.</span>
+</div>
+</div>
+<!-- Product Snapshot Preview -->
+<div class="p-3.5 rounded-xl bg-secondary-container text-on-secondary-container flex items-center gap-3">
+<img alt="Vista previa producto" class="w-12 h-12 rounded-lg object-cover flex-shrink-0" data-alt="Small rustic wicker basket packed with freshly cut ripe green Peruvian avocados on farm burlap background, organic warm photograph style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1-cG_thmRTZEGS_NfXrWyNnaKePz4zOZBZ0wG8jSo9KQiOkXTOapUHRifZ-bc85pd3Ue9nKBoBdCmko2EMY6wTI1J33CYNC1F8QIKb_nvfDBGeYP5I3Ukw3Zk9mgUfBhFgXtJyPzbsZ-BQvxZ6ycFyqFjkYKgd_oPFQJbNbfuhAKcfmIk5QW4O4HrYaGXfTS5G4D5VdJ0wRlLdvpNDKN0QWn1hE9bShPZVzKUQCVSZhPQR2TCAUTVkg"/>
+<div class="min-w-0 flex-1">
+<p class="text-xs font-bold font-headline truncate">Palta Fuerte Extra de Exportación</p>
+<p class="text-[11px] font-label text-on-secondary-container/80">S/. 9.50 / kg • Margen +45.3% • 120 kg inicial</p>
+</div>
+<div class="w-6 h-6 rounded-full bg-primary/20 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-sm">verified</span>
+</div>
+</div>
+<!-- Botones de Acción -->
+<div class="pt-2 space-y-2.5">
+<button class="w-full py-3.5 px-4 rounded-xl bg-primary text-on-primary font-headline font-semibold text-base shadow-sm hover:opacity-95 active:scale-[0.99] transition-all flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-xl">check</span>
+<span>Guardar Producto en Catálogo</span>
+</button>
+<button class="w-full py-3 px-4 rounded-xl bg-surface-container text-primary font-headline font-semibold text-sm hover:bg-surface-container-high active:scale-[0.99] transition-all flex items-center justify-center gap-2" onclick="saveAndAddAnother()" type="button">
+<span class="material-symbols-outlined text-lg">add</span>
+<span>Guardar y agregar otro</span>
+</button>
+</div>
+</form>
+</div>
+<script>
+  function calculateMargin() {
+    const sell = parseFloat(document.getElementById('sellPrice').value) || 0;
+    const cost = parseFloat(document.getElementById('costPrice').value) || 0;
+    const marginBadge = document.getElementById('marginPercent');
+    const marginDetail = document.getElementById('marginDetail');
+
+    if (sell > 0) {
+      const profit = sell - cost;
+      const margin = (profit / sell) * 100;
+      marginBadge.textContent = margin.toFixed(1) + '%';
+      marginDetail.textContent = 'Ganancia neta: S/. ' + profit.toFixed(2) + ' por unidad';
+
+      const card = document.getElementById('marginCard');
+      if (margin < 15) {
+        card.className = 'rounded-xl p-3.5 bg-error-container text-on-error-container flex items-center justify-between gap-3 transition-all duration-300';
+      } else if (margin < 30) {
+        card.className = 'rounded-xl p-3.5 bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-between gap-3 transition-all duration-300';
+      } else {
+        card.className = 'rounded-xl p-3.5 bg-primary-fixed text-on-primary-fixed flex items-center justify-between gap-3 transition-all duration-300';
+      }
+    } else {
+      marginBadge.textContent = '0%';
+      marginDetail.textContent = 'Ingresa los precios para proyectar';
+    }
+  }
+
+  function selectCropIcon(type) {
+    const iconMap = {
+      'Palta': 'potted_plant',
+      'Queso': 'bakery_dining',
+      'Huevos': 'egg',
+      'Hortalizas': 'grass',
+      'Frutas': 'nutrition'
+    };
+    const iconName = iconMap[type] || 'spa';
+    const preview = document.getElementById('previewIcon');
+    if (preview) {
+      preview.textContent = iconName;
+    }
+  }
+
+  // Handle unit chips selection
+  document.querySelectorAll('.unit-chip').forEach(chip => {
+    chip.addEventListener('click', function() {
+      document.querySelectorAll('.unit-chip').forEach(c => {
+        c.classList.remove('bg-primary', 'text-on-primary');
+        c.classList.add('bg-surface-container', 'text-on-surface');
+        const icon = c.querySelector('.material-symbols-outlined');
+        if (icon) icon.classList.add('opacity-0');
+      });
+
+      this.classList.remove('bg-surface-container', 'text-on-surface');
+      this.classList.add('bg-primary', 'text-on-primary');
+      const icon = this.querySelector('.material-symbols-outlined');
+      if (icon) icon.classList.remove('opacity-0');
+
+      const label = document.getElementById('selectedUnitLabel');
+      if (label) {
+        label.textContent = this.querySelector('span').textContent;
+      }
+    });
+  });
+
+  function saveAndAddAnother() {
+    const input = document.getElementById('prodName');
+    input.value = '';
+    input.placeholder = 'Ingresa el siguiente producto...';
+    input.focus();
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(46,50,48,0.05)]" data-active-classes="text-primary font-bold"><div class="h-16 px-2 flex items-center justify-around"><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="text-[10px] font-label font-medium tracking-tight">Inicio</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="ventas" href="#"><span class="material-symbols-outlined text-[22px]">point_of_sale</span><span class="text-[10px] font-label font-medium tracking-tight">Ventas</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="productos" href="#"><span class="material-symbols-outlined text-[22px]">potted_plant</span><span class="text-[10px] font-label font-medium tracking-tight">Productos</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="gastos" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="text-[10px] font-label font-medium tracking-tight">Gastos</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="clientes" href="#"><span class="material-symbols-outlined text-[22px]">groups</span><span class="text-[10px] font-label font-medium tracking-tight">Clientes</span></a></div></nav></body></html>
